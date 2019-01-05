@@ -9,11 +9,11 @@
 #endif
 
 // HC-SR04
-#define TRIGPIN 9
-#define ECHOPIN 10
+#define TRIGPIN 14
+#define ECHOPIN 12
 
 // Neopixels
-#define LEDPIN 6
+#define LEDPIN 15
 #define NUMLEDS 30
 
 // Parameter 1 = number of pixels in strip
@@ -41,7 +41,7 @@ void setup() {
     strip.begin();
     strip.show(); // Initialize all pixels to 'off'
 
-    Serial.begin(9600); // Starts the serial communication
+    Serial.begin(115200); // Starts the serial communication
 }
 
 void loop() {
@@ -52,7 +52,7 @@ void loop() {
         Serial.println(distance);
 
         int normalized = (distance / maximumDistance) * 255; // make distance a value between 0, 255
-        normalized = max(normalized, 255); // clamp value
+        normalized = min(normalized, 255); // clamp value
         Serial.print("Distance (normalized): ");
         Serial.println(normalized);
 
