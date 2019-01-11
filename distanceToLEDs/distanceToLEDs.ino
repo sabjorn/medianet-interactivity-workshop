@@ -29,16 +29,39 @@ void loop() {
   Serial.print("Distance (cm): ");
   Serial.println(distance);
 
-  // update LEDs
-  int numLedsToLight = map(distance, 0, MAX_DIST, 0, NUM_LEDS);
-  numLedsToLight = min(numLedsToLight, NUM_LEDS);
-  Serial.print("Distance (normalized): ");
-  Serial.println(numLedsToLight);
+  // set LED colour based on 'thesholding'
+  //
+  CRGB color;
+  int threshold = 20;
+  int numLedsToLight = NUM_LEDS;
+  if(distance < threshold){
+    // set one colour for this threshold
+    color = CRGB(255, 0, 0); // red
+  }
+  else{
+    // set to other colour when not past threshold
+    color = CRGB(0, 255, 0); // blue
+  }
+
+  // Set number of LEDs based on distance
+  // "continuous"
+  //
+  // CRGB color(255, 0, 0); // red
+  // int numLedsToLight = map(distance, 0, MAX_DIST, 0, NUM_LEDS);
+  // Serial.print("Distance (normalized): ");
+  // Serial.println(numLedsToLight);
+
+  // Set HUE of LEDS based on distance
+  //
+  // int numLedsToLight = NUM_LEDS;
+  // int max_val = 255; // we need a value between 0 and max_val
+  // int hue = map(distance, 0, MAX_DIST, 0, max_val);
+  // CHSV color(hue, 255, 255); // Hue, Saturation, Value
 
   // First, clear the existing led values
   FastLED.clear();
   for(int led = 0; led < numLedsToLight; led++) { 
-      leds[led] = CRGB::Blue; 
+      leds[led] = color;
   }
   FastLED.show();
 
