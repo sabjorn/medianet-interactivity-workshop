@@ -5,12 +5,12 @@
 #include <FastLED.h>
 
 // HC-SR04
-#define TRIG_PIN 14
-#define ECHO_PIN 12
+#define TRIG_PIN 2
+#define ECHO_PIN 16
 #define MAX_DIST 50
 
 // Neopixels
-#define LED_PIN 23
+#define LED_PIN 0
 #define NUM_LEDS 16
 
 CRGB leds[NUM_LEDS]; // Define the array of leds
