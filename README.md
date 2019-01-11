@@ -23,6 +23,21 @@ Go to the Arduino download page [here](https://www.arduino.cc/en/main/software) 
 ### Install ESP8266 Board Package
 The ESP8266 board package instructions are available [here](https://github.com/esp8266/Arduino#installing-with-boards-manager)
 
+### Install FastLED Library
+#### Step 1
+In the Arduino menu, select:
+```
+Sketch -> Include Library -> Manage Libraries
+```
+![FastLED Install Step 1](images/fastled_step1.png)
+#### Step 2
+In the search bar, type:
+```
+fastled
+```
+Select `verion 3.2.1` and click `install`.
+![FastLED Install Step 2](images/fastled_step2.png)
+
 ### Wiring
 Below is the circuit diagram for wiring the parts together. Feel free to use a breadboard and to change the pins for each device (just be sure to add adjust those pins in the code!)
 
