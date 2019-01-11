@@ -8,10 +8,20 @@ The basic idea is to show a simple example of mapping and input and output betwe
 This project utilizes three main components:
 
 ### Arduino
-Specifically, this project was designed to be used with the ESP8266 microcontroller. The Arduino framework is used because it allows for some cross-platform capabilities and will therefore allow this code to be used more broadly with different microcontrollers.
+Specifically, this project was designed to be used with the ESP8266 microcontroller ([Adafruit Huzzah Feather](https://www.bc-robotics.com/shop/adafruit-feather-huzzah-with-esp8266-wifi/)). The Arduino framework is used because it allows for some cross-platform capabilities and will therefore allow this code to be used more broadly with different microcontrollers.
 
 ### WS2812 RGB LEDs
-These LEDs were chosen for their ubiquity and relative inexpensiveness. Individually addressable LEDs allow for a wide range of output behaviour with only a small amount of knowledge. Furthermore, exploring colour space (e.g. RGB vs HSV) and array indexing is highly likely with this type of output (compared to an actuator like a solenoid, which has a small set of output states).
+These LEDs were chosen for their ubiquity and relative inexpensiveness ([Adafruit NeoPixel Ring](https://www.bc-robotics.com/shop/neopixel-ring-16-rgb-led/)). Individually addressable LEDs allow for a wide range of output behaviour with only a small amount of knowledge. Furthermore, exploring colour space (e.g. RGB vs HSV) and array indexing is highly likely with this type of output (compared to an actuator like a solenoid, which has a small set of output states).
 
 ### HCSR04 Ultrasonic Rangefinder
-This device was chosen because it is inexpensive and allows for a wide range of control options (e.g. threshold triggering, discrete region mapping, and 'continuous' control). Furthermore, these devices have a large maximum distance range, making them appropriate for use in human interaction.
+[This device](https://www.bc-robotics.com/shop/ultrasonic-distance-transducer/) was chosen because it is inexpensive and allows for a wide range of control options (e.g. threshold triggering, discrete region mapping, and 'continuous' control). Furthermore, these devices have a large maximum distance range, making them appropriate for use in human interaction.
+
+## Setup
+### Download Arduino Software
+Go to the Arduino download page [here](https://www.arduino.cc/en/main/software) and select your operating system (Windows, Mac, or Linux).
+
+### Install ESP8266 Board Package
+The ESP8266 board package instructions are available [here](https://github.com/esp8266/Arduino#installing-with-boards-manager)
+
+### Wiring
+![Circuit Wiring Diagram](images/circuit_diagram.png "Circuit Wiring Diagram")
