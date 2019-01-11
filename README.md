@@ -24,4 +24,6 @@ Go to the Arduino download page [here](https://www.arduino.cc/en/main/software) 
 The ESP8266 board package instructions are available [here](https://github.com/esp8266/Arduino#installing-with-boards-manager)
 
 ### Wiring
+Below is the circuit diagram for wiring the parts together. Feel free to use a breadboard and to change the pins for each device (just be sure to add adjust those pins in the code!)
+
 ![Circuit Wiring Diagram](images/circuit_diagram.png "Circuit Wiring Diagram")
