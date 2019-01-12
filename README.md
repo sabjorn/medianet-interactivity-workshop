@@ -38,7 +38,12 @@ fastled
 Select `verion 3.2.1` and click `install`.
 ![FastLED Install Step 2](images/fastled_step2.png)
 
-### Wiring
+### Download this Code
+Click [here](https://github.com/sabjorn/medianet-interactivity-workshop/archive/master.zip) to download this code.
+
+Unzip it and inside you will find a folder called `distanceToLEDs`. This has our `Arduino` code in it.
+
+## Wiring
 Below is the circuit diagram for wiring the parts together. Feel free to use a breadboard and to change the pins for each device (just be sure to add adjust those pins in the code!)
 
 ![Circuit Wiring Diagram](images/circuit_diagram.png "Circuit Wiring Diagram")
