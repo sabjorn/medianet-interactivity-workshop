@@ -17,16 +17,16 @@ These LEDs were chosen for their ubiquity and relative inexpensiveness ([Adafrui
 [This device](https://www.bc-robotics.com/shop/ultrasonic-distance-transducer/) was chosen because it is inexpensive and allows for a wide range of control options (e.g. threshold triggering, discrete region mapping, and 'continuous' control). Furthermore, these devices have a large maximum distance range, making them appropriate for use in human interaction.
 
 ## Setup
-### Download Arduino Software
+### 1 - Download Arduino Software
 Go to the Arduino download page [here](https://www.arduino.cc/en/main/software) and select your operating system (Windows, Mac, or Linux).
 
-### Install FTDI Driver
+### 2 - Install FTDI Driver
 Available [here](http://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
 
-### Install ESP8266 Board Package
+### 3 - Install ESP8266 Board Package
 The ESP8266 board package instructions are available [here](https://github.com/esp8266/Arduino#installing-with-boards-manager)
 
-### Install FastLED Library
+### 4 - Install FastLED Library
 #### Step 1
 In the Arduino menu, select:
 ```
@@ -41,7 +41,7 @@ fastled
 Select `verion 3.2.1` and click `install`.
 ![FastLED Install Step 2](images/fastled_step2.png)
 
-### Download this Code
+### 5 - Download this Code
 Click [here](https://github.com/sabjorn/medianet-interactivity-workshop/archive/master.zip) to download this code.
 
 Unzip it and inside you will find a folder called `distanceToLEDs`. This has our `Arduino` code in it.
