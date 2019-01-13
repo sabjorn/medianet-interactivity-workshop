@@ -20,6 +20,9 @@ These LEDs were chosen for their ubiquity and relative inexpensiveness ([Adafrui
 ### Download Arduino Software
 Go to the Arduino download page [here](https://www.arduino.cc/en/main/software) and select your operating system (Windows, Mac, or Linux).
 
+### Install FTDI Driver
+Available [here](http://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
+
 ### Install ESP8266 Board Package
 The ESP8266 board package instructions are available [here](https://github.com/esp8266/Arduino#installing-with-boards-manager)
 
